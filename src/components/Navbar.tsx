@@ -19,9 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto h-full flex items-center justify-between px-6">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
-          <div className="w-8 h-8 border border-primary/60 flex items-center justify-center">
-            <div className="w-3 h-3 bg-primary" />
-          </div>
+          <img src={logo} alt="Black Node SpA" className="w-9 h-9 rounded-full object-cover" />
           <span className="font-bold text-foreground tracking-tight text-lg">
             Black Node<span className="text-muted-foreground font-normal ml-1 text-sm">SpA</span>
           </span>
