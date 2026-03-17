@@ -1,3 +1,5 @@
+import logo from "@/assets/logo-blacknode.png";
+
 const footerLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
