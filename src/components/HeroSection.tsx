@@ -58,10 +58,10 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#contacto"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground text-sm font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_30px_hsl(190_95%_45%/0.3)] transition-all duration-400"
+              href="mailto:contacto@blacknode.cl?subject=Solicitud%20de%20evaluación"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground text-sm font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_30px_hsl(190_95%_45%/0.3)] transition-all duration-400"
             >
-              Solicitar evaluación
+              <Mail className="w-4 h-4" /> Solicitar evaluación
             </a>
             <a
               href="#servicios"
