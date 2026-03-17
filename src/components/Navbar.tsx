@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
+import logo from "@/assets/logo-blacknode.png";
 
 const navLinks = [
   { label: "Inicio", href: "#inicio" },
@@ -18,9 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto h-full flex items-center justify-between px-6">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-2">
-          <div className="w-8 h-8 border border-primary/60 flex items-center justify-center">
-            <div className="w-3 h-3 bg-primary" />
-          </div>
+          <img src={logo} alt="Black Node SpA" className="w-9 h-9 rounded-full object-cover" />
           <span className="font-bold text-foreground tracking-tight text-lg">
             Black Node<span className="text-muted-foreground font-normal ml-1 text-sm">SpA</span>
           </span>
@@ -41,10 +40,10 @@ const Navbar = () => {
 
         {/* CTA */}
         <a
-          href="#contacto"
-          className="hidden md:inline-flex items-center px-5 py-2 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_20px_hsl(190_95%_45%/0.3)] transition-all duration-300"
+          href="mailto:contacto@blacknode.cl?subject=Solicitud%20de%20evaluación"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_20px_hsl(190_95%_45%/0.3)] transition-all duration-300"
         >
-          Solicitar evaluación
+          <Mail className="w-3.5 h-3.5" /> Solicitar evaluación
         </a>
 
         {/* Mobile toggle */}
@@ -73,11 +72,11 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contacto"
+              href="mailto:contacto@blacknode.cl?subject=Solicitud%20de%20evaluación"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] mt-2"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] mt-2"
             >
-              Solicitar evaluación
+              <Mail className="w-3.5 h-3.5" /> Solicitar evaluación
             </a>
           </motion.div>
         )}

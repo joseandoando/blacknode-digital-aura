@@ -1,3 +1,5 @@
+import logo from "@/assets/logo-blacknode.png";
+
 const footerLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
@@ -14,9 +16,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-7 h-7 border border-primary/60 flex items-center justify-center">
-                <div className="w-2.5 h-2.5 bg-primary" />
-              </div>
+              <img src={logo} alt="Black Node SpA" className="w-9 h-9 rounded-full object-cover" />
               <span className="font-bold text-foreground tracking-tight">
                 Black Node<span className="text-muted-foreground font-normal ml-1 text-sm">SpA</span>
               </span>
