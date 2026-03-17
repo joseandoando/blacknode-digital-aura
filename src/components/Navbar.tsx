@@ -40,10 +40,10 @@ const Navbar = () => {
 
         {/* CTA */}
         <a
-          href="#contacto"
-          className="hidden md:inline-flex items-center px-5 py-2 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_20px_hsl(190_95%_45%/0.3)] transition-all duration-300"
+          href="mailto:contacto@blacknode.cl?subject=Solicitud%20de%20evaluación"
+          className="hidden md:inline-flex items-center gap-2 px-5 py-2 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_20px_hsl(190_95%_45%/0.3)] transition-all duration-300"
         >
-          Solicitar evaluación
+          <Mail className="w-3.5 h-3.5" /> Solicitar evaluación
         </a>
 
         {/* Mobile toggle */}
