@@ -21,6 +21,7 @@ const Index = () => {
       <ClientsSection />
       <WebHostingSection />
       <TeamSection />
+      <PartnersCarousel />
       <CTASection />
       <Footer />
     </div>
