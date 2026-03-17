@@ -94,11 +94,17 @@ const CTASection = () => {
                     placeholder="Cuéntanos qué necesitas..."
                   />
                 </div>
-                <button
-                  type="submit"
+                <a
+                  href="mailto:contacto@blacknode.cl?subject=Contacto%20desde%20web"
                   className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground text-sm font-semibold uppercase tracking-[0.1em] hover:shadow-[0_0_30px_hsl(190_95%_45%/0.3)] transition-all duration-300"
                 >
-                  <Send className="w-4 h-4" /> Contactar ahora
+                  <Send className="w-4 h-4" /> Contactar por correo
+                </a>
+                <button
+                  type="submit"
+                  className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-border text-foreground text-sm font-semibold uppercase tracking-[0.1em] hover:border-primary/50 hover:text-primary transition-all duration-300"
+                >
+                  Enviar formulario
                 </button>
               </form>
             )}
