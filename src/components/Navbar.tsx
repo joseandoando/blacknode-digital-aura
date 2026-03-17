@@ -72,11 +72,11 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contacto"
+              href="mailto:contacto@blacknode.cl?subject=Solicitud%20de%20evaluación"
               onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center px-5 py-2.5 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] mt-2"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground text-xs font-semibold uppercase tracking-[0.1em] mt-2"
             >
-              Solicitar evaluación
+              <Mail className="w-3.5 h-3.5" /> Solicitar evaluación
             </a>
           </motion.div>
         )}

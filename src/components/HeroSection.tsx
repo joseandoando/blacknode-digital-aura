@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Mail } from "lucide-react";
 
 const HeroSection = () => {
   return (
